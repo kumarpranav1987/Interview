@@ -18,3 +18,26 @@
   INput : N=5 K=3
   s[N] = {3,4,2,1,5}
 Here at Step i= 1 we have two option either go to 2 i.e i+1   or s[i] i.e 3 go to third step
+
+
+Second Round : 
+1)Given an array of integers print numbers which are duplicate
+[1,2,2,4,4,10]
+
+2)Given a 2-D shorted array check if a number exists in this array
+
+1 2 3 
+10 23 45
+100 300 500
+
+
+Third round
+1)ACID property in database
+2)types of indexes in DB
+3)Transactions in DB
+4)Design Chess Board Game
+5)Explain Microservies
+6)Design a multi machine caching system, which will be horizontally scalable.
+7)Which indexes are requied in muti key quiries like salary < 100 and city="Pune"
+8)Type of Lock used in ConcurrentHashMap
+9)Mutex,Semaphore,CyclicBarrie,CounthDownlatch
