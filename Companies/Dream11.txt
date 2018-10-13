@@ -1,1 +1,20 @@
 13/10/2018
+1)Rate a 2D Array(N X N) by 90 degree clockwise.
+  Input
+  3
+  3 4 7 
+  7 3 0
+  9 2 4 
+  Output
+  9 7 3
+  2 3 4
+  4 0 7
+  
+  2)There are N steps to cover for reaching destination
+  at every step i there are two choices either go to i+1 step or accrding to an array s[n] where s[n] will be provided
+  
+  Check if we can reach destination in less tha K steps , where K will be provided
+  
+  INput : N=5 K=3
+  s[N] = {3,4,2,1,5}
+Here at Step i= 1 we have two option either go to 2 i.e i+1   or s[i] i.e 3 go to third step
