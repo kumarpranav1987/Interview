@@ -1,0 +1,5 @@
+First Round
+
+1) Given an array of numbers find all triplets(Three Numbers) whose Sum is 0.
+2) Top view of binary tree
+3) Least Common ancestor in Binart tree
