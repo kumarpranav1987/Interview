@@ -3,3 +3,12 @@ First Round
 1) Given an array of numbers find all triplets(Three Numbers) whose Sum is 0.
 2) Top view of binary tree
 3) Least Common ancestor in Binart tree
+
+Second Round - Hacker Rank Coding
+1)Given an array of integeres reduce it to size 1
+	Reduction step :  we can remove two numbers from array and put back the sum of the numbers removed.Cost of this operation is Sum of two removed numbers.
+	Output : Retuen the min=nimun cost for reduction to size 1.
+
+2)Function to validate of IPV4 and IPV6 
+3)Question related to number fo connected components in a Graph
+
