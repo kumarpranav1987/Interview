@@ -1,0 +1,86 @@
+1)Find the max salary from table Emp. Table Emp has following data.
+
+mysql> select * from Emp;
++------+--------+---------+
+| Name | Salary | Dept_Id |
++------+--------+---------+
+| B    |    200 |       2 |
+| C    |    300 |       1 |
+| A    |    100 |       2 |
+| D    |    400 |       1 |
+| E    |    500 |       1 |
+| F    |    600 |       3 |
++------+--------+---------+
+6 rows in set (0.00 sec)
+
+mysql>
+
+mysql> select max(salary) from Emp;
++-------------+
+| max(salary) |
++-------------+
+|         600 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+2)Now for the same data find 2nd max salary
+mysql> select max(salary) from Emp where salary < (select max(salary) from Emp);
++-------------+
+| max(salary) |
++-------------+
+|         500 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+	
+
+
+mysql> select * from Emp;
++------+--------+---------+
+| Name | Salary | Dept_Id |
++------+--------+---------+
+| B    |    200 |       2 |
+| C    |    300 |       1 |
+| A    |    100 |       2 |
+| D    |    400 |       1 |
+| E    |    500 |       1 |
+| F    |    600 |       3 |
++------+--------+---------+
+6 rows in set (0.00 sec)
+
+mysql> select * from Dept;
++---------+-----------+
+| Dept_Id | dept_Name |
++---------+-----------+
+|       1 | IT        |
+|       2 | Admin     |
+|       4 | Travel    |
++---------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> select * from Dept_Details;
++-----------+-------+
+| dept_Name | phone |
++-----------+-------+
+| IT        | 123   |
+| Admin     | 456   |
+| Travel    | 789   |
++-----------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select e.Name,dd.phone from Emp e inner join Dept d on e.Dept_Id = d.Dept_Id inner join Dept_Details dd on d.dept_Name = dd.dept_Name where e.salary =500;
++------+-------+
+| Name | phone |
++------+-------+
+| E    | 123   |
++------+-------+
+1 row in set (0.00 sec)
+
+mysql>
