@@ -2,3 +2,11 @@ OS-Ubuntu
 Install mysql server: 
     sudo apt-get update
     sudo apt-get install mysql-server
+
+To Acces MySql Command Line :(By Default Password is Blank)
+    sudo mysql -u root -p
+    
+Set root password:
+    sudo mysql -u root -p
+    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+    FLUSH PRIVILEGES;
